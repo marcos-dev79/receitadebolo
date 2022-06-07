@@ -28,7 +28,7 @@ public class Receita {
         System.out.println(this.name + "\n");
 
         String ingredientes = this.ingredientesList.stream()
-                .map(ingrediente -> ingrediente.getName() + " " + ingrediente.getQuantidade() + " " + ingrediente.getMedida())
+                .map(ingrediente -> ingrediente.getName() + " " + ingrediente.getQuantidade() + " " + ingrediente.getMedida().getMedidaString())
                 .collect(Collectors.joining("\n"));
 
         System.out.println(ingredientes + "\n");

@@ -2,10 +2,10 @@ package com.mr.domainObject;
 
 public class Ingrediente {
     private String name;
-    private String quantidade;
-    private String medida;
+    private Double quantidade;
+    private Medidas medida;
 
-    public Ingrediente(String name, String quantidade, String medida) {
+    public Ingrediente(String name, Double quantidade, Medidas medida) {
         this.name = name;
         this.quantidade = quantidade;
         this.medida = medida;
@@ -15,11 +15,11 @@ public class Ingrediente {
         return name;
     }
 
-    public String getQuantidade() {
+    public Double getQuantidade() {
         return quantidade;
     }
 
-    public String getMedida() {
+    public Medidas getMedida() {
         return medida;
     }
 }
